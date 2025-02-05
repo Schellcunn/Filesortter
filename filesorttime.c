@@ -2,10 +2,10 @@
 #include <stdlib.h>
 #include <string.h>
 #include <windows.h>
-#include <direct.h> // For _mkdir
-#include <shlwapi.h> // For PathCombine
-#include <time.h> // For timing
-#include <stdint.h> // For uint32_t
+#include <direct.h> 
+#include <shlwapi.h> 
+#include <time.h> 
+#include <stdint.h> 
 
 // CRC32 lookup table
 static uint32_t crc32_tab[] = {
@@ -63,7 +63,7 @@ static uint32_t crc32_tab[] = {
     0x2d02ef8dL
 };
 
-// Function to calculate CRC32 checksum using the provided model
+// lookup table for CRC32 checksum
 uint32_t crc32(const unsigned char *s, size_t len) {
     int i;
     uint32_t crc32val = 0;
